@@ -13,12 +13,12 @@
             <property name="groups" value="java,javax,org,com"/>
             <property name="separated" value="true"/>
         </module>
-
-        <module name="LineLength">
-            <property name="max" value="120"/>
-            <property name="ignorePattern" value="^package.*|^import.*"/>
-        </module>
-
-        <module name="FileTabCharacter"/>
     </module>
+
+    <module name="LineLength">
+        <property name="max" value="120"/>
+        <property name="ignorePattern" value="^package.*|^import.*"/>
+    </module>
+
+    <module name="FileTabCharacter"/>
 </module>

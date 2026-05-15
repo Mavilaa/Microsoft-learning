@@ -75,7 +75,7 @@
                 </executions>
                 <configuration>
                     <configLocation>checkstyle.xml</configLocation>
-                    <encoding>UTF-8</encoding>
+                    <charset>UTF-8</charset>
                     <consoleOutput>true</consoleOutput>
                     <failsOnError>true</failsOnError>
                     <includes>**/*.java</includes>
