@@ -2,50 +2,82 @@
 
 # Soc Ops
 
-Social Bingo game for in-person mixers. Find people who match the questions and get 5 in a row!
+**A Social Bingo experience built as a hands-on GitHub Copilot Agent Lab.**
 
-📚 **[View Lab Guide](workshop/GUIDE.md)**
+Meet new people, spark conversations, and win by matching questions with teammates in real life.
 
----
+- 🎯 Designed for in-person mixers, workshops, and team icebreakers
+- 🤖 Built with Java, Spring Boot, and agent-driven development
+- 🚀 Includes guided lab content for setup, design, quiz generation, and multi-agent workflows
 
-## 📚 Lab Guide
-
-| Part | Title |
-|------|-------|
-| [**00**](workshop/00-overview.md) | Overview & Checklist |
-| [**01**](workshop/01-setup.md) | Setup & Context Engineering |
-| [**02**](workshop/02-design.md) | Design-First Frontend |
-| [**03**](workshop/03-quiz-master.md) | Custom Quiz Master |
-| [**04**](workshop/04-multi-agent.md) | Multi-Agent Development |
-
-> 📝 Lab guides are also available in the [`workshop/`](workshop/) folder for offline reading.
+📚 **[Open the Lab Guide](workshop/GUIDE.md)**
 
 ---
 
-## Prerequisites
+## Why Soc Ops?
 
-- [Java 21 JDK](https://adoptium.net/) or higher
-- [Apache Maven 3.9+](https://maven.apache.org/) (or use the included Maven Wrapper)
+This repository is both a playable Social Bingo app and a learning lab for GitHub Copilot Agent Mode.
 
-## Run
+You can:
+
+- build a small Java Spring Boot app with a polished UI
+- explore frontend design and developer workflows
+- use background and cloud agents to speed up docs, tests, and feature work
+- learn how to turn project instructions into better AI outcomes
+
+---
+
+## What’s inside
+
+- `socops/` – Spring Boot app, static frontend, REST controller, and game logic
+- `workshop/` – guided walkthroughs for setup, design, quiz generation, and agent-led development
+- `.github/agents/` – reusable agent definitions for TDD, design, and maintenance
+- `.github/instructions/` – project-specific instructions that teach the AI about this repo
+
+---
+
+## Get started
+
+### Run locally
 
 ```bash
 cd socops
 ./mvnw spring-boot:run
 ```
 
-## Build
+Then visit `http://localhost:8080`.
+
+### Build
 
 ```bash
 cd socops
 ./mvnw clean package
 ```
 
-## Test
+### Test
 
 ```bash
 cd socops
 ./mvnw test
 ```
 
-Deploys automatically to GitHub Pages on push to `main`.
+---
+
+## Lab roadmap
+
+| Step | Focus |
+|------|-------|
+| [**00**](workshop/00-overview.md) | Overview & checklist |
+| [**01**](workshop/01-setup.md) | Setup & context engineering |
+| [**02**](workshop/02-design.md) | Design-first frontend |
+| [**03**](workshop/03-quiz-master.md) | Custom Quiz Master |
+| [**04**](workshop/04-multi-agent.md) | Multi-agent development |
+
+> 📝 The workshop is also available offline in the `workshop/` folder.
+
+---
+
+## Notes
+
+- This repo deploys automatically to GitHub Pages on push to `main`.
+- Use `+` → **New cloud agent** in Copilot to explore async ideas like docs polish or design variations.
