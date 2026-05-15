@@ -18,25 +18,42 @@
 <!-- ============================================================= -->
 <!--  LOBBY — visible before a game starts                          -->
 <!-- ============================================================= -->
-<div id="lobbyView" class="flex flex-col items-center justify-center min-h-full px-6 py-10 bg-midnight">
-    <div class="text-center max-w-lg">
-        <div class="station-title">Dark Mode</div>
-        <h1 class="neon-heading text-5xl font-bold mb-3">Soc Ops</h1>
-        <p class="text-soft text-lg mb-10">Social Bingo with a sleek midnight interface.</p>
-
-        <div class="glass-panel section-card p-6 mb-8">
-            <h2 class="font-semibold text-white mb-3">How to play</h2>
-            <ul class="text-left text-soft text-sm space-y-2">
-                <li>• Find people who match the questions</li>
-                <li>• Tap a square when you find a match</li>
-                <li>• Get 5 in a row to win!</li>
-            </ul>
+<div id="lobbyView" class="flex flex-col items-center justify-center min-h-full px-6 py-12 bg-midnight">
+    <div class="text-center w-full max-w-2xl">
+        <div class="hero-badge mb-6 inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-semibold">
+            <span class="mr-2">✨</span> Fresh board + instant icebreakers
         </div>
 
-        <button onclick="launchGame()"
-                class="w-full btn-primary font-semibold py-4 px-8 rounded-lg text-lg transition-colors">
-            Start Game
-        </button>
+        <h1 class="neon-heading text-5xl font-bold mb-4">Play social bingo that gets everyone talking.</h1>
+        <p class="text-soft text-lg mb-10 leading-tight">
+            Generate a lively 5×5 prompt board, tap people who match, and win bingo while discovering new connections.
+        </p>
+
+        <div class="hero-panel glass-panel p-8 mb-10">
+            <h2 class="font-semibold text-white text-2xl mb-3">Ready in seconds</h2>
+            <p class="text-soft text-sm leading-tight mb-6">
+                Use Soc Ops in meetings, icebreakers, or socials—no signup needed, just instant prompts and playful conversation.
+            </p>
+            <button onclick="launchGame()"
+                    class="w-full btn-primary font-semibold py-4 rounded-lg text-lg transition-colors">
+                Start the board
+            </button>
+        </div>
+
+        <div class="grid feature-grid gap-4">
+            <div class="feature-card">
+                <div class="feature-title">No setup needed</div>
+                <p class="text-soft text-sm">Launch a new board instantly with conversation-ready prompts.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-title">Built for groups</div>
+                <p class="text-soft text-sm">Play with teammates, classmates, or friends and keep the energy flowing.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-title">Free center tile</div>
+                <p class="text-soft text-sm">The middle square starts selected so anyone can join right away.</p>
+            </div>
+        </div>
     </div>
 </div>
 

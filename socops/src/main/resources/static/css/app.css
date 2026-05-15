@@ -191,6 +191,37 @@ button:disabled { cursor: default; }
     backdrop-filter: blur(18px);
 }
 
+.hero-badge {
+    background: rgba(56, 189, 248, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.22);
+    color: #ffffff;
+}
+
+.hero-panel {
+    background: rgba(9, 16, 35, 0.95);
+    border: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.feature-title {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.max-w-2xl { max-width: 42rem; }
+
 .page-shell {
     min-height: 100%;
     position: relative;
